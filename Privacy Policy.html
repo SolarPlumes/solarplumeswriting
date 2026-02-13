@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <title>Privacy Policy | Solar Plumes</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+</head>
+
+<body class="homepage">
+
+    <div class="mobile-sticky-header">
+  <a href="index.html" class="sticky-logo">
+    <img src="logo.png" alt="Solar Plumes Logo"></a>
+    <span class="brand-name">Solar Plumes</span>
+</div>
+
+  <!-- HERO / HEADER -->
+  <header class="hero">
+    <h1>
+      <span class="brand-art">Solar Plumes</span>
+    </h1>
+
+    <p class="tagline"><strong>Privacy Policy</strong></p>
+  </header>
+
+   <div class="hamburger" id="hamburger">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+<!-- Slide-in Navigation Menu -->
+<nav class="buttons" id="mobileMenu">
+  <div class="menu-header">
+    <a href="index.html" class="logo-wrap">
+      <img src="logo.png" alt="Solar Plumes Logo" class="logo"/></a>
+      <div class="menu-title">Solar Plumes</div>
+    
+  </div>
+
+  <!-- Menu buttons -->
+  <div class="menu-buttons" id="menuButtons">
+  <a href="/contact.html" class="btn">Contact Us</a>
+  <a href="/The Plumes.html" class="btn outline">The Plumes</a>
+  <a href="/Privacy Policy.html" class="btn outline">Privacy Policy</a>
+  <a href="/about.html" class="btn outline">About</a>
+</div>
+</nav>
+
+<nav class="desktop-menu">
+  <nav class="desktop-logo">
+    <a href="index.html" class="sticky-logo">
+      <img src="logo.png" alt="Solar Plumes Logo">
+    </a>
+    <span class="brand-name">Solar Plumes</span>
+  </nav>
+
+  <nav class="desktop-links">
+    <a href="contact.html" class="btn">Contact Us</a>
+    <a href="The Plumes.html" class="btn outline">The Plumes</a>
+    <a href="Privacy Policy.html" class="btn outline">Privacy Policy</a>
+    <a href="about.html" class="btn outline">About</a>
+  </nav>
+</nav>
+
+  <!-- MAIN CONTENT -->
+  <main class="container">
+
+    <section class="legal-card">
+      <h2>Privacy Policy</h2>
+      <p><strong>Last updated:</strong> January 2026</p>
+
+      <p>
+        Your privacy matters. This Privacy Policy explains how information is collected, used,
+        and protected when you visit the Solar Plumes website.
+      </p>
+
+      <h3>Information We Collect</h3>
+      <p>
+        We may collect limited personal information when you:
+      </p>
+      <ul>
+        <li>Fill out a contact or inquiry form</li>
+        <li>Download a free PDF or resource</li>
+        <li>Send us a message or request</li>
+      </ul>
+
+      <p>
+        This information may include your name, email address, and any message you choose to share.
+      </p>
+
+      <h3>How Your Information Is Used</h3>
+      <p>
+        Your information is used only to:
+      </p>
+      <ul>
+        <li>Respond to your inquiries</li>
+        <li>Provide requested resources or materials</li>
+        <li>Improve website content and services</li>
+      </ul>
+
+      <p>
+        We do <strong>not</strong> sell, rent, or trade your personal information.
+      </p>
+
+      <h3>Third-Party Services</h3>
+      <p>
+        This site may use trusted third-party tools (such as email services or basic analytics)
+        to operate properly. These services may process limited data according to their own
+        privacy policies.
+      </p>
+
+      <h3>Cookies</h3>
+      <p>
+        This website may use basic cookies or analytics tools to understand site traffic
+        and improve user experience. These do not collect personally identifiable information.
+      </p>
+
+      <h3>Data Protection</h3>
+      <p>
+        Reasonable measures are taken to protect your personal information. However,
+        no method of transmission over the internet is 100% secure.
+      </p>
+
+      <h3>Your Rights</h3>
+      <p>
+        You may request to access, correct, or delete the information you shared
+        by contacting us through the details provided on this site.
+      </p>
+
+      <h3>Changes to This Policy</h3>
+      <p>
+        This Privacy Policy may be updated occasionally. Any changes will be reflected on this page.
+      </p>
+
+    </section>
+
+  </main>
+
+  <div id="menu-placeholder"></div>
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const mobileHamburger = document.getElementById('mobileHamburger');
+  
+
+
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    mobileMenu.classList.toggle('show');
+  });
+</script>
+
+
+</body>
+</html>

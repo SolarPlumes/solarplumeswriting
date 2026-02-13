@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  
+  <!-- Responsive on mobile -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
+
+  <title>Contact — Solar Plumes</title>
+  
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="favicon.png">
+</head>
+
+<body class="homepage">
+
+  <div class="mobile-sticky-header">
+  <a href="index.html" class="sticky-logo">
+    <img src="logo.png" alt="Solar Plumes Logo"></a>
+    <span class="brand-name">Solar Plumes</span>
+  
+</div>
+
+<div class="hamburger" id="hamburger">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+  
+  <!-- HERO HEADER -->
+  <header class="hero">
+    <a href="index.html">
+      <img src="logo.png" alt="Solar Plumes Logo" class="logo">
+    </a>
+    <p class="tagline">Contact Solar Plumes</p>
+
+ </header>
+
+<!-- Slide-in Navigation Menu -->
+<nav class="buttons" id="mobileMenu">
+  <div class="menu-header">
+    <a href="index.html" class="logo-wrap">
+      <img src="logo.png" alt="Solar Plumes Logo" class="logo"/>
+    </a>
+      <div class="menu-title">Solar Plumes</div>
+    
+  </div>
+  <!-- Menu buttons -->
+  <div class="menu-buttons" id="menuButtons">
+  <a href="contact.html" class="btn">Contact Us</a>
+  <a href="The Plumes.html" class="btn outline">The Plumes</a>
+  <a href="Privacy Policy.html" class="btn outline">Privacy Policy</a>
+  <a href="about.html" class="btn outline">About</a>
+</div>
+</nav>
+
+
+<nav class="desktop-menu">
+  <nav class="desktop-logo">
+    <a href="index.html" class="sticky-logo">
+      <img src="logo.png" alt="Solar Plumes Logo">
+    </a>
+    <span class="brand-name">Solar Plumes</span>
+  </nav>
+
+  <nav class="desktop-links">
+    <a href="contact.html" class="btn">Contact Us</a>
+    <a href="The Plumes.html" class="btn outline">The Plumes</a>
+    <a href="Privacy Policy.html" class="btn outline">Privacy Policy</a>
+    <a href="about.html" class="btn outline">About</a>
+  </nav>
+</nav>
+
+  <!-- MAIN CONTENT -->
+  <main class="container">
+
+    <!-- CONTACT INFORMATION -->
+    <section class="content-card contact-info">
+      <h2>Get in touch for writing and editing assistance. </h2>
+ <div class="contact-instructions">
+  <p>
+    Submit your draft and any relevant instructions through one of the platforms below.
+    We accept <strong>DOC and DOCX files</strong>.</p>
+
+
+
+  <div class="request-btn" id="openRequestForm">
+  Request a Service </div> 
+  <div class="request-modal" id="requestModal">
+  <div class="request-modal-content">
+    <div class="request-close" id="closeRequest">&times;</div>
+
+    <form
+  action="https://formspree.io/f/mkozyqlo"
+  class="fs-form"
+  target="_top"
+  method="POST"
+>
+  <fieldset>
+    <legend class="fs-fieldset-title">Contact Information</legend>
+    <div class="fs-field">
+      <label class="fs-label" for="full-name">Full Name</label>
+      <input
+        class="fs-input"
+        id="full-name"
+        name="full-name"
+        placeholder="Enter your full name"
+        required
+      />
+    </div>
+    <div class="fs-field">
+      <label class="fs-label" for="email-address">Email Address</label>
+      <input
+        class="fs-input"
+        id="email-address"
+        name="email-address"
+        placeholder="Enter your email address"
+        required
+      />
+    </div>
+    <div class="fs-field">
+      <label class="fs-label" for="whatsapp-number">WhatsApp Number (optional)</label>
+      <input
+        class="fs-input"
+        id="whatsapp-number"
+        name="whatsapp-number"
+        placeholder="Enter your WhatsApp number"
+      />
+    </div>
+  </fieldset>
+  <fieldset>
+    <legend class="fs-fieldset-title">Support Request Details</legend>
+    <div class="fs-field">
+      <label class="fs-label" for="support-type">Type of Support Needed</label>
+      <select class="fs-select" id="support-type" name="support-type" required>
+        <option value="Essay-Editing-&-Proofreading">Essay Editing & Proofreading</option>
+        <option value="Article-&-Blog-Writing">Article & Blog Writing</option>
+        <option value="Case-Studies">Case Studies</option>
+        <option value="Creative-Writing-Assistance">Creative Writing Assistance</option>
+          <option value="Guides-&-Instructional-Content">Guides & Instructional Content</option>
+      </select>
+    </div>
+    <div class="fs-field">
+      <label class="fs-label" for="subject-of-request">
+        Subject of Request
+      </label>
+      <input
+        class="fs-input"
+        id="subject-of-request"
+        name="subject-of-request"
+        placeholder="Enter the subject of your request"
+        required
+      />
+    </div>
+    <div class="fs-field col-span-full">
+      <label class="fs-label" for="detailed-description">
+        Detailed Instructions for the Request
+      </label>
+      <textarea
+        class="fs-textarea"
+        id="detailed-description"
+        name="detailed-description"
+        placeholder="Provide a detailed description"
+        required
+      ></textarea>
+    </div>
+    <div class="fs-field">
+      <label class="fs-label" for="attachment">
+        Attachment (add link of the draft file (DOC/DOCX))
+      </label>
+      <input
+        class="fs-input"
+        id="attachment"
+        name="attachment"
+        placeholder="link  to Google Drive, Dropbox, etc."
+      />
+    </div>
+    <div class="fs-field">
+      <label class="fs-label" for="best-time-to-reach">
+        Best Time to Reach You (required)
+      </label>
+      <input
+        class="fs-input"
+        id="best-time-to-reach"
+        name="best-time-to-reach"
+        placeholder="e.g., Weekdays 2-5 PM"
+      />
+    </div>
+    <div class="fs-field">
+  <label class="fs-label" for="request-country">
+    Country (required)
+  </label>
+  <input
+    class="fs-input"
+    type="text"
+    id="request-country"
+    name="request-country"
+    placeholder="Enter your country"
+    required
+  />
+</div>
+<div class="fs-field">
+  <label class="fs-label" for="request-deadline">
+    Request Deadline (required)
+  </label>
+  <input
+    class="fs-input"
+    type="date"
+    id="request-deadline"
+    name="request-deadline"
+    placeholder="MM/DD/YYYY - 2 to 7 days from today"
+    required
+  />
+</div>
+    <div class="fs-button-group">
+      <button class="fs-button" type="submit">Submit</button>
+    </div>
+  </fieldset>
+</form>
+
+</div>
+  </div>
+
+
+
+   <p>Once received, we’ll review your request and complete the work within your designated timeframe,
+    with a minimum turnaround of two days.
+  </p>
+</div>
+      <h3>Phone: +63 919-388-4719</h3>
+	 <div class="social-icons">
+	  <a href="https://www.facebook.com/profile.php?id=61586680736076" target="_blank" rel="noopener" aria-label="Facebook">
+          <img src="../facebook-icon.png" alt="Facebook">
+        </a>
+ <a href="https://mail.google.com/mail/?view=cm&fs=1&to=servicessolarplumes@gmail.com"><img src="../icons-gmail.png" alt="Gmail"></a>
+		<a href="https://wa.me/639193884719?text=Hello%20I’d%20like%20help%20with%20writing%20support"
+   target="_blank"
+   aria-label="Chat with us on WhatsApp">
+  <img src="whatsapp-icon.png" alt="WhatsApp Icon" class="contact-icon">
+</a>
+
+	    </div>
+      <p>For inquiries about writing support and editing services, feel free to reach out anytime.</p>
+    </section>
+
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <img src="logo-footer.png" alt="Solar Plumes Logo" class="footer-logo">
+    <p class="footer-text">
+      © 2026 Solar Plumes — By: Neil Encarnacion. All rights reserved.
+    </p>
+  </footer>
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const mobileHamburger = document.getElementById('mobileHamburger');
+  
+
+
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    mobileMenu.classList.toggle('show');
+  });
+</script>
+
+<script>
+document.getElementById("openRequestForm").addEventListener("click", () => {
+  document.getElementById("requestModal").style.display = "flex";
+  
+});
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const modal = document.getElementById("requestModal");
+  const openBtn = document.getElementById("openRequestForm");
+  const closeBtn = document.getElementById("closeRequest");
+
+  // Open modal on button click
+  openBtn.addEventListener("click", () => {
+    modal.style.display = "flex";
+  });
+
+  // Close modal on "×" click
+  closeBtn.addEventListener("click", () => {
+    modal.style.display = "none";
+  });
+
+  // Close modal if clicking outside content
+  modal.addEventListener("click", (e) => {
+    if (e.target === modal) {
+      modal.style.display = "none";
+    }
+  });
+});
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const leadForm = document.querySelector(".fs-form");
+  const countryInput = document.getElementById("request-country");
+
+  leadForm.addEventListener("submit", (e) => {
+    const countryValue = countryInput.value.trim();
+
+    // Only allow letters, spaces, and hyphens
+    const validCountry = /^[A-Za-z\s\-]+$/.test(countryValue);
+
+    if (!validCountry) {
+      e.preventDefault();
+      alert("Please enter a valid country name using letters only.");
+      countryInput.focus();
+      return false;
+    }
+
+    if (countryValue.length < 2 || countryValue.length > 20 || !validCountry) {
+  e.preventDefault();
+  alert("Please enter a valid country name (2–20 letters).");
+  countryInput.focus();
+  return false;
+}
+
+  });
+});
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const leadForm = document.querySelector(".fs-form");
+  const countryInput = document.getElementById("request-country");
+
+  // List of valid countries (can be expanded)
+  const countries = [
+    "Afghanistan","Albania","Algeria","Andorra","Angola","Antigua and Barbuda",
+    "Argentina","Armenia","Australia","Austria","Azerbaijan","Bahamas","Bahrain",
+    "Bangladesh","Barbados","Belarus","Belgium","Belize","Benin","Bhutan","Bolivia",
+    "Bosnia and Herzegovina","Botswana","Brazil","Brunei","Bulgaria","Burkina Faso",
+    "Burundi","Cabo Verde","Cambodia","Cameroon","Canada","Central African Republic",
+    "Chad","Chile","China","Colombia","Comoros","Congo","Costa Rica","Croatia",
+    "Cuba","Cyprus","Czech Republic","Denmark","Djibouti","Dominica","Dominican Republic",
+    "Ecuador","Egypt","El Salvador","Equatorial Guinea","Eritrea","Estonia","Eswatini",
+    "Ethiopia","Fiji","Finland","France","Gabon","Gambia","Georgia","Germany","Ghana",
+    "Greece","Grenada","Guatemala","Guinea","Guinea-Bissau","Guyana","Haiti","Honduras",
+    "Hungary","Iceland","India","Indonesia","Iran","Iraq","Ireland","Israel","Italy",
+    "Jamaica","Japan","Jordan","Kazakhstan","Kenya","Kiribati","Kuwait","Kyrgyzstan",
+    "Laos","Latvia","Lebanon","Lesotho","Liberia","Libya","Liechtenstein","Lithuania",
+    "Luxembourg","Madagascar","Malawi","Malaysia","Maldives","Mali","Malta","Marshall Islands",
+    "Mauritania","Mauritius","Mexico","Micronesia","Moldova","Monaco","Mongolia","Montenegro",
+    "Morocco","Mozambique","Myanmar","Namibia","Nauru","Nepal","Netherlands","New Zealand",
+    "Nicaragua","Niger","Nigeria","North Korea","North Macedonia","Norway","Oman","Pakistan",
+    "Palau","Palestine","Panama","Papua New Guinea","Paraguay","Peru","Philippines","Poland",
+    "Portugal","Qatar","Romania","Russia","Rwanda","Saint Kitts and Nevis","Saint Lucia",
+    "Saint Vincent and the Grenadines","Samoa","San Marino","Sao Tome and Principe",
+    "Saudi Arabia","Senegal","Serbia","Seychelles","Sierra Leone","Singapore","Slovakia",
+    "Slovenia","Solomon Islands","Somalia","South Africa","South Korea","South Sudan","Spain",
+    "Sri Lanka","Sudan","Suriname","Sweden","Switzerland","Syria","Taiwan","Tajikistan",
+    "Tanzania","Thailand","Timor-Leste","Togo","Tonga","Trinidad and Tobago","Tunisia",
+    "Turkey","Turkmenistan","Tuvalu","Uganda","Ukraine","United Arab Emirates","United Kingdom",
+    "United States","Uruguay","Uzbekistan","Vanuatu","Vatican City","Venezuela","Vietnam",
+    "Yemen","Zambia","Zimbabwe","Other"
+  ];
+
+  leadForm.addEventListener("submit", (e) => {
+    const input = countryInput.value.trim().toLowerCase();
+    const isValid = countries.some(c => c.toLowerCase() === input);
+
+    if (!isValid) {
+      e.preventDefault();
+      alert("Please enter a valid country name.");
+      countryInput.focus();
+      return false;
+    }
+  });
+});
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const leadForm = document.querySelector(".fs-form");
+  const deadlineInput = document.getElementById("request-deadline");
+
+  // Calculate min and max dates
+  const today = new Date();
+  
+  const minDate = new Date();
+  minDate.setDate(today.getDate() + 2); // 2 days from today
+  
+  const maxDate = new Date();
+  maxDate.setDate(today.getDate() + 7); // 7 days from today
+
+  // Set min and max attributes for date input
+  deadlineInput.min = minDate.toISOString().split('T')[0]; // YYYY-MM-DD
+  deadlineInput.max = maxDate.toISOString().split('T')[0]; // YYYY-MM-DD
+
+  // Validate on form submission
+  leadForm.addEventListener("submit", (e) => {
+    const selectedDate = new Date(deadlineInput.value);
+
+    if (!deadlineInput.value) {
+      e.preventDefault();
+      alert("Please select a deadline for your request.");
+      return;
+    }
+
+    if (selectedDate < minDate) {
+      e.preventDefault();
+      alert("Deadline must be at least 2 days from today.");
+      deadlineInput.focus();
+      return false;
+    }
+
+    if (selectedDate > maxDate) {
+      e.preventDefault();
+      alert("Deadline cannot be more than 7 days from today.");
+      deadlineInput.focus();
+      return false;
+    }
+  });
+});
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Solar Plumes - Services</title>
+	<link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body class="effective-writing">
+
+        <div class="mobile-sticky-header">
+  <a href="index.html" class="sticky-logo">
+    <img src="logo.png" alt="Solar Plumes Logo"></a>
+    <span class="brand-name">Solar Plumes</span>
+</div>
+  <!-- HERO SECTION -->
+  <header class="hero">
+   <h1>
+  <span class="brand-art">Solar Plumes</span>
+</h1>
+
+     <p class="tagline"><strong>Effective, Clear, and Confident Writing</strong></p>
+<p class="tagline">Learn how to communicate your ideas through writing</p>
+  </header>
+
+   <div class="hamburger" id="hamburger">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+<!-- Slide-in Navigation Menu -->
+<nav class="buttons" id="mobileMenu">
+  <div class="menu-header">
+    <a href="index.html" class="logo-wrap">
+      <img src="logo.png" alt="Solar Plumes Logo" class="logo"/></a>
+      <div class="menu-title">Solar Plumes</div>
+    
+  </div>
+
+  <!-- Menu buttons -->
+  <div class="menu-buttons" id="menuButtons">
+  <a href="contact.html" class="btn">Contact Us</a>
+  <a href="The Plumes.html" class="btn outline">The Plumes</a>
+  <a href="Privacy Policy.html" class="btn outline">Privacy Policy</a>
+  <a href="about.html" class="btn outline">About</a>
+</div>
+</nav>
+
+<nav class="desktop-menu">
+  <nav class="desktop-logo">
+    <a href="index.html" class="sticky-logo">
+      <img src="logo.png" alt="Solar Plumes Logo">
+    </a>
+    <span class="brand-name">Solar Plumes</span>
+  </nav>
+
+  <nav class="desktop-links">
+    <a href="contact.html" class="btn">Contact Us</a>
+    <a href="The Plumes.html" class="btn outline">The Plumes</a>
+    <a href="Privacy Policy.html" class="btn outline">Privacy Policy</a>
+    <a href="about.html" class="btn outline">About</a>
+  </nav>
+</nav>
+  <!-- ARTICLES LIST -->
+<main>
+
+<section class="seo-grid">
+  <!-- Each content card -->
+
+<div class="insight-card">
+      <div class="insight-thumb">
+        <img src="writing-guide.png" alt="Thumbnail">
+      </div>
+      <h3>How to Communicate Ideas Clearly Through Writing</h3>
+      <p class="insight-date">Uploaded on February 14, 2026</p>
+      <p> learn writing skills that help you express your thoughts clearly and effectively.</p>
+      <div class="card-actions">
+        <a href="writing-guides.pdf" class="btn download-btn" download>Download</a>
+      </div>
+    </div>
+
+    <!-- Example card 2 -->
+    <div class="insight-card">
+      <div class="insight-thumb">
+        <img src="coming-soon.png" alt="Thumbnail">
+      </div>
+      <h3></h3>
+      <p class="insight-date">Coming Soon</p>
+    </div>
+    <!-- Example card 1 -->
+       <div class="insight-card">
+      <div class="insight-thumb">
+        <img src="coming-soon.png" alt="Thumbnail">
+      </div>
+      <h3></h3>
+      <p class="insight-date">Coming Soon</p>
+
+    </div>
+
+
+    <!-- add more cards as needed -->
+
+  </section>
+</main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <img src="logo-footer.png" alt="Solar Plumes Logo" class="footer-logo">
+    <p>© 2026 Solar Plumes - By: Neil Encarnacion. All rights reserved.</p>
+  </footer>
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const mobileHamburger = document.getElementById('mobileHamburger');
+  
+
+
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    mobileMenu.classList.toggle('show');
+  });
+</script>
+
+<script>
+const indicators = document.querySelectorAll('.carousel-indicators .indicator');
+const totalSlides = indicators.length; // should be 5
+let currentIndex = 0;
+
+// Total animation duration in milliseconds
+const totalAnimationDuration = 18000; // 18s total for the whole keyframe
+const slideDuration = totalAnimationDuration / totalSlides; // 3600ms per slide
+
+// Function to update active indicator
+function updateIndicators() {
+  indicators.forEach((dot, i) => {
+    dot.classList.toggle('active', i === currentIndex);
+  });
+}
+
+// Cycle slides and update indicators in sync with keyframe
+setInterval(() => {
+  currentIndex = (currentIndex + 1) % totalSlides;
+  updateIndicators();
+}, slideDuration);
+
+// Optional: allow clicking indicators to jump to a slide
+indicators.forEach((dot, i) => {
+  dot.addEventListener('click', () => {
+    currentIndex = i;
+    updateIndicators();
+    document.querySelector('.carousel-track').style.transform = `translateX(-${i * 100}%)`;
+    // Optional: reset animation so CSS keyframes continue smoothly
+    document.querySelector('.carousel-track').style.animation = 'none';
+    void document.querySelector('.carousel-track').offsetWidth; // force reflow
+    document.querySelector('.carousel-track').style.animation = `slideMobile ${totalAnimationDuration}ms infinite ease-in-out`;
+  });
+});
+</script>
+
+
+
+
+
+
+</body>
+</html>

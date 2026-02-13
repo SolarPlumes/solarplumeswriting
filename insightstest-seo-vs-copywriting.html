@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <title>Understanding the Stages of Prospect Awareness | Solar Plumes</title>
+  <link rel="stylesheet" href="/path/to/your/styles.css"> <!-- your main stylesheet -->
+  <link rel="icon" type="image/png" href="favicon.png">
+  
+
+  <style>
+    /* Article page-specific styles */
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: #f9f9f9;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    header, footer {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    
+
+    .site-footer {
+  position: relative;
+  text-align: center;
+  padding: 200px 20px 60px;
+  color: #2e3a1f;
+  overflow: visible;
+  z-index: 1;
+}
+
+.site-footer::before {
+  content: '';
+  position: absolute;
+  top: -200px;
+  left: 0;
+  width: 100vw;
+  height: 600px;
+}
+
+.content-card:last-child {
+  position: relative;
+  z-index: 2;
+  margin-bottom: -150px;
+}
+
+.footer-logo {
+  width: 70px;
+  height: auto;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto 8px;
+}
+
+    .article-container {
+      max-width: 1000px;
+      margin: 50px auto;
+      padding: 30px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    }
+@media (max-width: 1100px) {
+  .article-container {
+      max-width: 100%;
+      margin: 50px auto;
+      padding: 30px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    }
+  }
+    .article-header {
+  display: flex;
+  flex-direction: column; /* stack items vertically */
+  align-items: left;    /* center the image and title */
+  gap: 15px;              /* space between image and title */
+  margin-bottom: 100px;
+}
+
+
+    .article-header img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 8px;
+      flex-shrink: 0;
+    }
+
+    .article-header h1 {
+      font-size: 28px;
+      margin: 0;
+    }
+
+    .article-content p {
+      font-size: 16px;
+      margin-bottom: 20px;
+      text-align: justify;
+      margin-right: 20px;
+      margin-left: 20px
+    }
+
+    .article-content h2 {
+      font-size: 22px;
+      margin-top: 80px;
+      margin-bottom: 30px;
+    }
+p.lede {
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+   max-width: 600px; 
+  margin: 0 auto 32px;
+  margin-top: 80px;
+      margin-bottom: 15px;
+}
+    @media (max-width: 1100px) {
+      .article-header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .article-header img {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 10px;
+      }
+
+      .article-header h1 {
+        font-size: 22px;
+      }
+      .article-content p {
+      font-size: 16px;
+      margin-bottom: 20px;
+      text-align: justify;
+      margin-right: 2px;
+      margin-left: 2px
+    }
+
+    }
+    .image-compare {
+  display: flex;
+  gap: 30px;           /* space between images */
+  margin: 30px 0 50px;
+  justify-content: center; /* optional: center images in container */
+}
+
+.image-compare img {
+  width: auto;          /* width adjusts automatically */
+  height: 250px;        /* set a fixed height for both */
+  object-fit: cover;    /* crops to fill without distortion */
+  border-radius: 8px;
+}
+
+/* Mobile: stack images */
+@media (max-width: 1280px) {
+  .image-compare {
+    flex-direction: row;   /* stack images vertically */
+    gap: 15px;                /* smaller vertical gap */
+    margin: 30px 0 50px;
+    align-items: center;      /* center the images */
+  }
+
+  .image-compare img {
+    width: auto;               /* almost full width of the screen */
+    max-width: 300px;         /* limits image size on bigger phones */
+    height: auto;             /* keeps aspect ratio */
+    object-fit: cover;        /* crops nicely if needed */
+    border-radius: 8px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .image-compare {
+    flex-direction: column;   /* stack images vertically */
+    gap: 15px;                /* smaller vertical gap */
+    margin: 30px 0 50px;
+    align-items: center;      /* center the images */
+  }
+
+  .image-compare img {
+    width: auto;               /* almost full width of the screen */
+    max-width: 300px;         /* limits image size on bigger phones */
+    height: auto;             /* keeps aspect ratio */
+    object-fit: cover;        /* crops nicely if needed */
+    border-radius: 8px;
+  }
+}
+
+.bullet-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.bullet-list li {
+  padding-left: 20px;
+  position: relative;
+  margin-bottom: 12px;
+}
+
+.bullet-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #00AEEF; /* your brand accent */
+  font-size: 20px;
+  line-height: 1;
+}
+
+.awareness-stages {
+  margin: 25px 0 40px;
+  padding-left: 20px;
+}
+
+.awareness-stages li {
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+
+.awareness-stages strong {
+  font-weight: 700;          /* force bold */
+  display: inline;           /* keep inline */
+}
+.hamburger,
+.buttons {
+  display: none;
+}
+
+/* Mobile view: show hamburger and slider */
+@media (max-width: 1280px) {
+
+  /* Hamburger button */
+  .hamburger {
+    display: flex;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 22px;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    z-index: 1100;
+  }
+
+  .hamburger span {
+    height: 4px;
+    width: 100%;
+    background: #000;
+    border-radius: 2px;
+    transition: 0.3s;
+  }
+
+  /* X animation when active */
+  .hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+  }
+
+  /* Mobile slider menu */
+  .buttons {
+    display: flex;          /* show slider */
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -260px;          /* hidden by default */
+    width: 240px;
+    height: 100%;
+    padding-top: 0;
+    background: #fff;
+    z-index: 1000;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
+    transition: right 0.3s ease;
+  }
+
+  /* Show slider when active */
+  .buttons.show {
+    right: 0;
+  }
+
+  /* Menu header (logo + brand) */
+  .menu-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .menu-header .logo {
+    max-width: 50px;
+    margin-bottom: 5px;
+  }
+
+  .menu-header .menu-title {
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+  }
+
+  /* Menu buttons */
+  .buttons a:not(.logo-wrap) {
+    display: block;
+    margin: 10px 20px;
+    padding: 12px 20px;
+    border-radius: 6px;
+    background: #ff944d;
+    color: white;
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: transform 0.2s ease, background 0.2s ease;
+  }
+
+  .buttons a.outline:not(.logo-wrap) {
+    background: transparent;
+    color: black;
+    border: 2px solid #ff944d;
+  }
+
+  /* Hover effect */
+  .buttons a:not(.logo-wrap):hover,
+  .buttons a.outline:not(.logo-wrap):hover {
+    background: #e07a2c;
+    color: white;
+    transform: scale(1.03);
+  }
+}
+
+.btn.desktop-only {
+  display: inline-block;  /* or flex if needed */
+}
+
+/* Hide desktop-only buttons on mobile */
+@media (max-width: 1280px) {
+  .btn.desktop-only {
+    display: none;
+  }
+}
+.desktop-btns {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 80px;   /* ⬅ increase this */
+}
+
+/* Hide desktop-only buttons on mobile */
+@media (max-width: 1280px) {
+  .desktop-only {
+    display: none;
+  }
+}
+
+.mobile-sticky-header {
+  display: none; /* hidden by default */
+}
+
+
+@media (max-width: 1280px) {
+  .mobile-sticky-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 64px;
+
+    padding: 0 16px;
+    background: rgb(255, 255, 254);
+    z-index: 1200;
+
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  }
+  .brand-name {
+  font-weight: bold;
+  font-size: 18px; /* adjust size */
+
+  
+}
+
+.hero .logo-wrap {
+    display: none;
+  }
+
+  /* Hide old hamburger (desktop one) */
+  #hamburger {
+    display: flex;
+  }
+
+  /* Push content down so it doesn't hide under header */
+  body {
+    padding-top: 64px;
+  }
+}
+
+
+  /* TRUE CENTER LOGO */
+  .sticky-logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+  }
+
+  .sticky-logo img {
+    height: 36px;
+    width: auto;
+  }
+
+  .hamburger {
+    display: flex;
+    z-index: 10000;
+  } 
+
+@media (max-width: 1280px) {
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    top: 10;
+    right: -260px;      /* hidden off-screen by default */
+    width: 240px;
+    height: 100%;
+    background: #fff;
+    z-index: 1300;
+    transition: right 0.3s ease;
+    box-shadow: -2px 0 6px rgba(0,0,0,0.1);
+
+    border: 3px solid transparent; /* must be transparent */
+  border-radius: 12px;            /* rounded corners */
+  background:
+    linear-gradient(#fff, #fff) padding-box, /* inner background */
+    linear-gradient(90deg, #FFD93D, #A8E6A3, #B3E5FC, #00AEEF) border-box; /* gradient border */
+}
+  }
+
+  .buttons.active {
+    right: 0;           /* slide in when active */
+  }
+
+  /* Menu buttons container */
+  .menu-buttons {
+    flex: 1 ;                 /* take remaining height */
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;        /* enable vertical scroll */
+    -webkit-overflow-scrolling: touch; /* smooth scrolling on iOS */
+    padding: 16px 12px;
+    gap: 10px;
+  }
+
+  /* Buttons styling */
+  .menu-buttons .btn {
+    width: 80%;
+    margin: 0;
+    text-align: center;
+    padding: 12px 16px;
+    border-radius: 6px;
+    background: #ff944d;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+  }
+
+  .menu-buttons .btn.outline {
+    background: transparent;
+    color: black;
+    border: 2px solid #ff944d;
+  }
+
+  .menu-buttons .btn:hover,
+  .menu-buttons .btn.outline:hover {
+    background: #e07a2c;
+    color: white;
+    transform: scale(1.03);
+  }
+  
+  .desktop-menu {
+  display: flex;                 /* horizontal layout */
+  justify-content: center;     /* align links to right */
+  align-items: center;           /* vertically centered */
+  position: fixed;               /* stay at top */
+  top: 0;
+  left: 0;
+  width: 100%;                   /* full width */
+  padding: 10px 30px;            /* space inside menu */
+  background: #ffffff;           /* menu background */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* subtle shadow */
+  z-index: 1000;                 /* above other content */
+  gap: 15px;                     /* space between links */
+}
+
+
+
+/* Hide on mobile */
+@media (max-width: 1280px) {
+  .desktop-menu {
+    display: none;
+  }
+}
+
+
+/* LEFT: Logo */
+.desktop-logo {
+  display: flex;
+  align-items: center;
+  padding-left: 24px;
+  flex-shrink: 0; /* prevents logo from shrinking */
+}
+
+.sticky-logo img {
+  height: 36px;
+  display: block; /* removes top gap */
+}
+
+/* CENTER or RIGHT: Menu links */
+.desktop-links {
+  display: flex;
+  gap: 16px;
+  margin-left: 1000px; /* pushes links away from logo */
+  padding-right: 24px;
+}
+.desktop-menu .btn {
+  padding: 8px 14px;
+  font-size: 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.2s ease, color 0.2s ease;
+  background: #009bb6;
+  color: white;
+}
+.desktop-menu .btn:hover {
+  background: linear-gradient(
+    90deg,
+    #FFD93D,   /* beach yellow */
+    #A8E6A3,   /* beach green */
+    #B3E5FC,   /* ice blue */
+    #00AEEF    /* ocean blue */
+  );
+  color: #000000;
+}
+
+.brand-name {
+  font-weight: 700;
+  background: linear-gradient(
+    90deg,
+    #FFD84D,   /* sunny yellow */
+    #6ED39A,   /* beach green */
+    #6ECFFF    /* ice blue */
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.content-image-wrapper {
+  margin: 32px 0;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.content-image-wrapper img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+
+.arrow-list {
+  list-style: none;     /* removes bullets */
+  padding-left: 0;
+  margin: 0;
+}
+
+.arrow-list li {
+  position: relative;
+  padding-left: 28px;  /* space for arrow */
+  margin-bottom: 12px;
+}
+
+.arrow-list li::before {
+  content: "➤";        /* arrow only */
+  position: absolute;
+  left: 0;
+  top: 0.15em;         /* aligns arrow with text */
+  color: #7cb342;      /* adjust color */
+  font-weight: bold;
+}
+  </style>
+</head>
+<body>
+
+
+  <header>
+
+    <div class="mobile-sticky-header">
+  <a href="index.html" class="sticky-logo">
+    <img src="logo.png" alt="Solar Plumes Logo"></a>
+    <span class="brand-name">Solar Plumes</span>
+</div>
+  
+<div class="hamburger" id="hamburger">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+<nav class="buttons" id="mobileMenu">
+  <div class="menu-header">
+    <a href="index.html" class="logo-wrap">
+      <img src="logo.png" alt="Solar Plumes Logo" class="logo"/></a>
+      <div class="menu-title">Solar Plumes</div>
+    
+  </div>
+
+  <!-- Menu buttons -->
+  <div class="menu-buttons" id="menuButtons">
+  <a href="contact.html" class="btn">Contact Us</a>
+  <a href="The Plumes.html" class="btn outline">The Plumes</a>
+  <a href="Privacy Policy.html" class="btn outline">Privacy Policy</a>
+  <a href="about.html" class="btn outline">About</a>
+</div>
+</nav>
+
+  </header>
+
+<nav class="desktop-menu">
+  <nav class="desktop-logo">
+    <a href="index.html" class="sticky-logo">
+      <img src="logo.png" alt="Solar Plumes Logo">
+    </a>
+    <span class="brand-name">Solar Plumes</span>
+  </nav>
+
+  <nav class="desktop-links">
+    <a href="contact.html" class="btn">Contact Us</a>
+    <a href="The Plumes.html" class="btn outline">The Plumes</a>
+    <a href="Privacy Policy.html" class="btn outline">Privacy Policy</a>
+    <a href="about.html" class="btn outline">About</a>
+  </nav>
+</nav>
+
+  <main class="article-container">
+
+    <!-- Featured thumbnail + title -->
+    <div class="article-header">
+      <img src="seo-copy.png" alt="Thumbnail">
+      <h1>SEO Writing vs. Copywriting: How They Differ and Work Together </h1>
+    </div>
+
+    <!-- Full article content -->
+    <div class="article-content">
+      <p>SEO writing and copywriting are two essential branches of content marketing. Both play an important role in helping businesses reach their target audience and achieve specific goals. Content marketing involves creating and sharing valuable content across various platforms to attract potential customers and turn them into clients. This content may include blog posts, emails, videos, press releases, and other digital materials. </p>
+    
+     
+     <p>SEO writing and copywriting matter because they are strategically used to support different stages of the customer journey. While both involve writing content, they serve different purposes and require different approaches. In this article, we will explore the key differences between SEO writing and copywriting, and how content marketers use them together to achieve better results.</p>
+
+     <h2>What is SEO writing?  </h2>
+   
+      <p>SEO writing focuses on creating content that is optimized for search engines while remaining useful and readable for users. Its primary goal is to improve visibility in search results by aligning content with search intent, relevant keywords, and clear structure. SEO writing is commonly used in blog posts, guides, and informational articles designed to attract organic traffic over time. </p>
+
+<h2>What is Copywriting?  </h2>
+
+<p>Copywriting, on the other hand, is focused on persuasion and action. Its main goal is to influence readers to take a specific step, such as signing up, purchasing a product, or clicking a link. Copywriting is commonly used in landing pages, advertisements, email campaigns, and product descriptions.</p>
+    
+<p class="lede">Now, let’s differentiate these two in this chart:</p>
+
+     <div class="content-image-wrapper">
+ <img
+  src="seo-copywriting.png"
+  alt="SEO vs Copywriting comparison chart"
+  class="content-image"
+ />
+</div>
+
+
+<p>The chart above highlights the key differences between SEO writing and copywriting based on purpose, style, and goals.</p>
+
+
+<h2>When to use SEO writing or Copywriting? </h2>
+
+      
+<p>Since we’ve already highlighted the key differences, deciding when to use SEO writing or copywriting becomes straightforward. <strong>SEO writing</strong> is used to align content with what your target audience is actively searching for. By creating SEO-optimized content, you can help potential clients find answers to their needs while improving your content’s ranking in search results and resonating with the intended audience. </p>
+
+<p><strong>Copywriting</strong>, on the other hand, is used to persuade potential customers to take action. It is commonly applied in ads, emails, landing pages, and product descriptions. As a versatile skill, copywriting can be applied across platforms to help businesses drive sales and expand their market reach.</p>
+
+<h2>How SEO writing and Copywriting work together? </h2>
+
+<p>The success of SEO writing and copywriting lies in their effective integration. Combining these elements allows businesses to create content that not only drives organic traffic but also converts visitors into loyal customers, leading to lasting results. This integrated approach is often called <strong>SEO copywriting</strong>. By understanding how these two elements work together, businesses can achieve more than just higher search rankings — they can also maintain a consistent brand voice across all digital platforms.</p>
+
+<h2>Conclusion </h2>
+
+<p>SEO writing and copywriting are two essential branches of content marketing, each serving distinct purposes. SEO writing attracts readers by improving visibility and aligning with search intent, while copywriting persuades them to take action. When combined effectively — through SEO copywriting — businesses can both drive traffic and convert visitors into loyal customers, all while maintaining a consistent brand voice. Understanding the differences, purposes, and synergy between these two approaches is key to creating a content strategy that delivers measurable results.</p>
+
+</div>
+
+
+  </main>
+
+  <footer class="site-footer">
+    <img src="logo-footer.png" alt="Solar Plumes Logo" class="footer-logo">
+
+
+    <p class="footer-text">
+      © 2026 Solar Plumes — By: Neil Encarnacion. All rights reserved.
+    </p>
+  </footer>
+
+  <script>
+  // Hide preloader when page fully loads
+  window.addEventListener('load', () => {
+    const preloader = document.getElementById('preloader');
+    preloader.style.opacity = '0';
+    preloader.style.transition = 'opacity 0.5s ease';
+    setTimeout(() => preloader.style.display = 'none', 500);
+  });
+
+  // Optional: auto-hide after 10 seconds for slow connections
+  setTimeout(() => {
+    const preloader = document.getElementById('preloader');
+    preloader.style.opacity = '0';
+    preloader.style.transition = 'opacity 0.5s ease';
+    setTimeout(() => preloader.style.display = 'none', 500);
+  }, 10000);
+</script>
+
+  <script>
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const mobileHamburger = document.getElementById('mobileHamburger');
+  
+
+
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    mobileMenu.classList.toggle('show');
+  });
+</script>
+
+
+</body>
+</html>
