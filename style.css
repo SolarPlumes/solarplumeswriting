@@ -1512,18 +1512,23 @@ main.container {
 
   .legal-card h2,
   .content-card h2 {
-    font-size: 1.7rem;
+    font-size: 1.25rem;
   }
 
   .legal-card h3,
   .content-card h3 {
-    font-size: 1.15rem;
+    font-size: 1rem;
   }
 
   .legal-card p,
   .content-card p {
-    font-size: 1rem;
+    font-size: 0.85rem;
     text-align: left;
+  }
+  .legal-card ul,
+  .content-card ul {
+    margin: 15px 0 20px 15px;
+    font-size: 0.85rem;
   }
 }
 
@@ -3290,6 +3295,7 @@ ALL INSIGHTS
 
 
   
+
 
 
 
