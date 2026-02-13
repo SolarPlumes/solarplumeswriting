@@ -2145,35 +2145,43 @@ main.container {
   align-items: center;
   justify-content: center;
   z-index: 10000;
-  
+  padding: 20px; /* prevents edge overflow on small screens */
 }
-
 .lead-modal-content {
   background: #fff;
-  padding: 32px;
-  border-radius: 16px;
-  max-width: 420px;
+  padding: 14px 16px;   /* smaller vertical padding */
+  border-radius: 10px;
+  max-width: 320px;
   width: 90%;
   text-align: center;
   position: relative;
-     border: 3px solid transparent; /* must be transparent */
+
+  border: 2px solid transparent;
+
   background:
-    linear-gradient(#fff, #fff) padding-box, /* inner background */
-    linear-gradient(90deg, #FFD93D, #A8E6A3, #B3E5FC, #00AEEF) border-box; /* gradient border */
+    linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(90deg, #FFD93D, #A8E6A3, #B3E5FC, #00AEEF) border-box;
 }
 
 .lead-modal-content h3 {
-  margin-bottom: 12px;
+  margin: 0 0 6px 0;   /* tighter */
+  font-size: 16px;
+}
+
+.lead-modal-content p {
+  margin: 0 0 8px 0;   /* reduce paragraph spacing */
+  font-size: 14px;
+  line-height: 1.3;
 }
 
 .lead-modal-content input {
   width: 100%;
-  padding: 12px;
-  margin: 12px 0;
-  border-radius: 8px;
+  padding: 8px;        /* smaller input */
+  margin: 6px 0;       /* tighter spacing */
+  border-radius: 6px;
   border: 1px solid #ccc;
+  font-size: 14px;
 }
-
 
 
 .lead-close {
@@ -3257,6 +3265,7 @@ ALL INSIGHTS
 
 
   
+
 
 
 
