@@ -16,18 +16,6 @@
   <!-- Main CSS -->
   <link rel="stylesheet" href="style.css">
    <link rel="icon" type="image/png" href="favicon.png">
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-PLFH62CSJ8"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-PLFH62CSJ8');
-</script>
-
-  
 </head>
 
 <body class="homepage">
@@ -82,8 +70,8 @@
   <!-- Menu buttons -->
   <div class="menu-buttons" id="menuButtons">
   <a href="contact.html" class="btn">Contact Us</a>
-  <a href="the-plumes.html" class="btn outline">The Plumes</a>
-  <a href="privacy-policy.html" class="btn outline">Privacy Policy</a>
+  <a href="The Plumes.html" class="btn outline">The Plumes</a>
+  <a href="Privacy Policy.html" class="btn outline">Privacy Policy</a>
   <a href="about.html" class="btn outline">About</a>
 </div>
 </nav>
@@ -100,8 +88,8 @@
 
   <nav class="desktop-links">
     <a href="contact.html" class="btn">Contact Us</a>
-    <a href="the-plumes.html" class="btn outline">The Plumes</a>
-    <a href="privacy-policy.html" class="btn outline">Privacy Policy</a>
+    <a href="The Plumes.html" class="btn outline">The Plumes</a>
+    <a href="Privacy Policy.html" class="btn outline">Privacy Policy</a>
     <a href="about.html" class="btn outline">About</a>
   </nav>
 </nav>
@@ -117,47 +105,77 @@
     Clients submit a draft, and we provide careful editing and refinement to improve clarity, structure, and flow.
   </p>
 </section>
-    <section id="services">
-      <h2>Our Services:</h2>
-<ul class="services-list">
-  <li>
-    <img src="icons-essay.png" alt="Essay Icon" class="service-icon">
-    <div class="service-text">
-      <strong>Essay Editing & Proofreading</strong>
-      <p>Refine your essays with thorough editing, grammar correction, and clarity improvements.</p>
-    </div>
-  </li>
-  <li>
-    <img src="icons-blog.png" alt="Article Icon" class="service-icon">
-    <div class="service-text">
-      <strong>Article & Blog Writing</strong>
-      <p>Create engaging articles and blog posts that connect with your readers.</p>
-    </div>
-  </li>
-  <li>
-    <img src="icons-case-study.png" alt="Case Study Icon" class="service-icon">
-    <div class="service-text">
-      <strong>Case Studies</strong>
-      <p>Detailed, professional case studies that communicate insights clearly and effectively.</p>
-    </div>
-  </li>
-  <li>
-    <img src="icons-creative.png" alt="Creative Writing Icon" class="service-icon">
-    <div class="service-text">
-      <strong>Creative Writing Assistance</strong>
-      <p>Support for stories, scripts, or imaginative content with originality and style.</p>
-    </div>
-  </li>
-  <li>
-    <img src="icons-guide.png" alt="Guide Icon" class="service-icon">
-    <div class="service-text">
-      <strong>Guides & Instructional Content</strong>
-      <p>Structured guides and instructional materials that educate and inform readers for professional or personal use.</p>
-    </div>
-  </li>
-</ul>
-    </section>
+  <section class="services">
+  <h2>Our Services:</h2>
+  <div class="service-cards">
 
+    <!-- Academic Excellence -->
+<div class="service-card">
+  <div class="service-text">
+    <h3>Academic Excellence</h3>
+    <h4>Essay Editing & Proofreading</h4>
+    <p>Turn strong drafts into polished, compelling submissions. I refine structure, clarity, grammar, and argument strength to ensure your work stands out.</p>
+  </div>
+  <a href="#contact" class="cta-btn">Request a Quote</a>
+</div>
+
+    <!-- Professional Authority -->
+<div class="service-card">
+  <h3>Professional Authority</h3>
+
+  <div class="service-item">
+    <strong>Article & Blog Writing</strong><br>
+    Thoughtful, engaging content that builds credibility and connects with your audience.
+  </div>
+
+  <div class="service-item">
+    <strong>Case Studies</strong><br>
+    Clear, structured case studies that showcase impact, results, and insights with professionalism.
+  </div>
+
+  <div class="service-item">
+    <strong>Guides & Instructional Content</strong><br>
+    Organized, reader-friendly materials that educate, inform, and simplify complex ideas.
+  </div>
+
+  <a href="#contact" class="cta-btn">Request a Quote</a>
+</div>
+
+    <!-- Creative Development -->
+    <div class="service-card">
+      <div class="service-text">
+      <h3>Creative Development</h3>
+      <h4>Creative Writing Assistance</h4>
+      <p>Constructive feedback and refinement for stories, scripts, and imaginative works — without compromising your unique voice.</p>
+      </div>
+      <a href="#contact" class="cta-btn">Request a Quote</a>
+    </div>
+    
+
+  </div>
+</section>
+
+<div id="quoteModal" class="quote-modal">
+  <div class="quote-modal-content">
+    <span id="closeQuote" class="close-btn">&times;</span>
+    <h3>Request a Quote</h3>
+    <form
+  action="https://formspree.io/f/xykdwzpn"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Project details:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>
+  </div>
+</div>
     <!-- TRUST -->
     <section id="trust">
       <h2>Why Clients Trust Solar Plumes</h2>
@@ -251,7 +269,7 @@
   </div>
 
   <div class="insights-cta container">
-    <a href="the-plumes.html" class="btn">View all insights</a>
+    <a href="The Plumes.html" class="btn">View all insights</a>
   </div>
 </section>
   </main>
@@ -274,7 +292,7 @@
     <h3>Free Guide: Turn Ideas Into Clear Writing</h3>
     <p>Stay updated with our latest insights — and get your free guide instantly</p>
 
-     <form
+ <form
   action="https://formspree.io/f/xpqlblee"
   class="fs-form"
   target="_top"
@@ -316,7 +334,7 @@
       <div>
         <label class="fs-label" for="_optin">Consent to Receive Emails</label>
         <p class="fs-description" id="_optin-description">
-          I agree to receive communications from Solar Plumes.
+          I agree to receive communications from [Company Name].
         </p>
       </div>
     </div>
@@ -428,6 +446,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 </script>
 
+
 <script>
   const el = document.querySelector('.slogan-text');
   const text = el.dataset.text;
@@ -448,11 +467,45 @@ document.addEventListener("DOMContentLoaded", () => {
   setTimeout(typeText, 1000); // 3000ms = 3 seconds
 </script>
 
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const modal = document.getElementById("quoteModal");
+  const closeBtn = document.getElementById("closeQuote");
+  const ctaButtons = document.querySelectorAll(".cta-btn");
+
+  if (!modal) return;
+
+  // Open modal when any CTA button clicked
+  ctaButtons.forEach(btn => {
+    btn.addEventListener("click", (e) => {
+      e.preventDefault(); // prevent default link behavior
+      modal.style.display = "flex";
+    });
+  });
+
+  // Close modal when X clicked
+  if (closeBtn) {
+    closeBtn.addEventListener("click", () => {
+      modal.style.display = "none";
+    });
+  }
+
+  // Close modal when clicking outside the content box
+  window.addEventListener("click", (e) => {
+    if (e.target === modal) {
+      modal.style.display = "none";
+    }
+  });
+
+  // Optional: close modal after successful Formspree submission
+  const form = modal.querySelector("form");
+  if (form) {
+    form.addEventListener("submit", () => {
+      modal.style.display = "none";
+    });
+  }
+});
+</script>
+
 </body>
-
 </html>
-
-
-
-
-
