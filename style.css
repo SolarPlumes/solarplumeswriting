@@ -497,6 +497,10 @@ p {
   flex-grow: 1; /* this pushes the CTA to the bottom */
 }
 
+.service-item {
+  flex-grow: 1; /* this pushes the CTA to the bottom */
+}
+
 .cta-btn {
   margin-top: 16px; /* optional spacing from text */
   display: inline-block;
@@ -3438,6 +3442,7 @@ ALL INSIGHTS
 
 
   
+
 
 
 
