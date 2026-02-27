@@ -242,7 +242,40 @@ header {
   text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
 }
 
+.research-guides .hero.hero {
+  width: 100vw;
+  max-width: 100%;
+  padding: 100px 20px;
+  box-sizing: border-box;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
 
+  background:                   /* NEW image layer */
+    url('research-guides.png') no-repeat center center;                          /* base image */
+
+  background-size: cover;
+}
+
+.research-guides p.tagline {
+  font-size: 1.2rem;
+
+  /* Gradient text (static) */
+  background: linear-gradient(
+    90deg,
+    #49f9ff,
+    #eeebcd,
+    #9ee8ff,
+    #c7d9ff
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+
+  /* Keep your text shadow */
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+}
 
 
 /* =========================
@@ -3442,6 +3475,7 @@ ALL INSIGHTS
 
 
   
+
 
 
 
