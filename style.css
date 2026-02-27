@@ -3301,6 +3301,7 @@ fieldset {
     gap: 24px;                   /* smaller spacing for mobile */
     padding: 16px;
     max-width: 1100px;
+	padding-bottom: 220px;
   }
 }
 
@@ -3475,6 +3476,7 @@ ALL INSIGHTS
 
 
   
+
 
 
 
